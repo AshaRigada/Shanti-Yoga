@@ -1,0 +1,364 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*
+Header---------------------------------------------------------------------------------------------------------------
+*/
+
+.logo {
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    background: #79c9c7;
+}
+
+.navigation li a {
+    font-family: "Quicksand", sans-serif;;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+nav .navigation {
+    background-color: #6cc7c5;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.navigation li a{
+    transition: all 0.3s ease-out;
+    background-color: #6cc7c5;
+    border-radius: 20px;
+}
+
+.navigation li a:not(.cta):hover{
+    padding: 7px 25px;
+    color: #2d5a51;
+    background-color: #1fbab8;
+}
+
+.cta button {
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    color: #f05c1e;
+    padding: 9px 25px;
+    background-color: #ffba9d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta button:hover {
+    background-color: #f05c1e;
+    color: #fff;
+}
+/*
+Body---------------------------------------------------------------------------------------------------------------
+*/
+
+.return a button{
+    position: absolute;
+    cursor: pointer;
+    font-size: 19pt;
+    padding: 15px 40px;
+    font-family: Quicksand, serif;
+    font-style: italic;
+    z-index:3;
+    color: #ffffff;
+    background-color: #2d5a51;
+    border: none;
+    border-radius: 10px;
+    top: 28%;
+    left: 5%;
+    transition: all 0.15s ease 0s;
+}
+
+.return a button:hover {
+    background-color: #ef7e46;
+}
+
+.dash {
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: 70%;
+    height: 1vh;
+    position: absolute;
+    top: 38%;
+}
+
+.textBox {
+    position: absolute;
+    width: 17%;
+    left: 5%;
+    top: 55%;
+}
+
+.textBox h1 {
+    font-family: "Segoe UI", cursive;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40pt;
+}
+
+.textBox h5 {
+    padding-top: 13%;
+    padding-bottom: 8%;
+    font-family: "Segoe UI", cursive;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 16pt;
+}
+
+.book a button {
+    position: relative;
+    cursor: pointer;
+    font-family: Quicksand, serif;
+    font-style: italic;
+    font-size: 16pt;
+    padding: 20px 33px;
+    top: 90%;
+    left: 30%;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px #ffffff solid;
+    border-radius: 8px;
+    transition: all 0.3s linear 0s;
+}
+
+.book a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #747474;
+}
+
+.bar {
+    position: absolute;
+    width: 60%;
+    background-color: #ef8049;
+    border-radius: 37px;
+    right: 15.5%;
+    top: 28%;
+}
+
+.day ul{
+    position: relative;
+    font-family: Quicksand, serif;
+    font-weight: 500;
+    font-size: 24pt;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 1% 10%;
+    list-style: none;
+}
+
+.schedules {
+    position: absolute;
+    width: 70%;
+    padding: 0 10%;
+    text-align: center;
+    top: 38%;
+    left: 17%;
+}
+
+table {
+    border-spacing: 0vh 2vh;
+}
+
+.hour {
+    font-family: Quicksand, serif;
+    font-weight: 300;
+    color: #ef8049;
+    font-size: 12pt;
+}
+
+.typeC {
+    font-family: sans-serif;
+    color: #6cc7c5;
+    font-size: 16pt;
+}
+
+.teacherN {
+    font-family: Corbel, serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: #6cc7c5;
+    z-index: 3;
+}
+
+.schedules .monday {
+    border: 5px #ef8049 solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.schedules .monday:hover {
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.monday {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    padding: 1% 2%;
+}
+
+.schedules .tuesday {
+    border: 5px #ef8049 solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.schedules .tuesday:hover {
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.tuesday {
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 31%;
+    position: absolute;
+    padding: 1% 2%;
+}
+
+.schedules .wednesday {
+    border: 5px #ef8049 solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.schedules .wednesday:hover {
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.wednesday {
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 48%;
+    position: absolute;
+    padding: 1% 2%;
+}
+
+.schedules .thursday {
+    border: 5px #ef8049 solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.schedules .thursday:hover {
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.thursday {
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 65%;
+    position: absolute;
+    padding: 1% 2%;
+}
+
+.schedules .friday {
+    border: 5px #ef8049 solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.schedules .friday:hover {
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.friday {
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 81%;
+    position: absolute;
+    padding: 1% 2%;
+}
+
+
+/*
+FOOTER--------------------------------------------------------------------------------------------------------------
+*/
+body {
+background-color: #35363a;
+max-width: 1920px;
+}
+
+
+.face {
+left: 8.4%;
+position: absolute;
+bottom: -38.7%;
+z-index:3;
+}
+
+.insta {
+position: absolute;
+bottom: -38.7%;
+z-index:3;
+left: 32%;
+}
+
+.bottom{
+  position: absolute;
+  top: 130%;
+  width: 100%;
+  background-color: #fff;
+  color: #323232;
+  text-align: center;
+  border-bottom: 4vh solid #fff;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+ }
+
+.links {
+color:#747474;
+    font-family: arial, serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 3% 10%;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.links:visited {
+color:#747474;
+}
+
+.link1 :hover{
+color: #f05c1e;
+}
+
+.link2 :hover{
+color: #f05c1e;
+}
+
+
+.backC {
+position: relative;
+width: 100%;
+z-index:-4;
+}

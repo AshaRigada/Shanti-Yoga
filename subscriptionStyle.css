@@ -1,0 +1,421 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*
+Header---------------------------------------------------------------------------------------------------------------
+*/
+
+.logo {
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    background: #79c9c7;
+}
+
+.navigation li a {
+    font-family: "Quicksand", sans-serif;;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+nav .navigation {
+    background-color: #6cc7c5;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.navigation li a{
+    transition: all 0.3s ease-out;
+    background-color: #6cc7c5;
+    border-radius: 20px;
+}
+
+.navigation li a:not(.cta):hover{
+    padding: 7px 25px;
+    color: #2d5a51;
+    background-color: #1fbab8;
+}
+
+.cta button {
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    color: #f05c1e;
+    padding: 9px 25px;
+    background-color: #ffba9d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta button:hover {
+    background-color: #f05c1e;
+    color: #fff;
+}
+/*
+Body---------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+.containers {
+    display: flex;
+    width:100%;
+    top: 35vh;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: #747474;
+    margin: auto;
+    z-index:3;
+}
+
+.container1 {
+    position: absolute;
+    height: 80vh;
+    width: 50vh;
+    background-color: #ffffff;
+    left: 10%;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease 0s;
+}
+
+.container1:hover {
+    transform: translateY(-30px);
+}
+
+.container2 {
+    position: absolute;
+    height: 80vh;
+    width: 50vh;
+    background-color: #ffffff;
+    left: 37.8%;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease 0s;
+}
+
+.container2:hover {
+    transform: translateY(-30px);
+}
+
+.container3 {
+    position: absolute;
+    height: 80vh;
+    width: 50vh;
+    background-color: #ffffff;
+    right: 10%;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease 0s;
+}
+
+.container3:hover {
+    transform: translateY(-30px);
+}
+
+
+.containers h1:not(.unlimited){
+    position: relative;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #f05c1e;
+    font-size: 34pt;
+    top: 22%;
+    z-index: 1;
+}
+
+.unlimited {
+    position: relative;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #1fbab8;
+    font-size: 34pt;
+    top: 22%;
+    z-index: 1;
+}
+
+.containers h3{
+    position: relative;
+    font-family: Quicksand, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #ffba9d;
+    font-size: 22pt;
+    top: 22%;
+    z-index: 1;
+}
+
+.containers h5:not(.description){
+    position: relative;
+    height: 25%;
+    font-family: "Tw Cen MT", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #ffba9d;
+    font-size: 13pt;
+    top: 29%;
+    padding: 0vh 8vh;
+    z-index: 1;
+}
+
+.description {
+    position: relative;
+    height: 25%;
+    font-family: "Tw Cen MT", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #6cc7c5;
+    font-size: 13pt;
+    top: 29%;
+    padding: 0vh 8vh;
+    z-index: 1;
+}
+
+.containers h2{
+    position: relative;
+    height: 1%;
+    font-family: "Tw Cen MT", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #6cc7c5;
+    font-size: 55pt;
+    top: 23%;
+    padding: 0vh 2vh;
+    z-index: 1;
+}
+
+.dash2 {
+    border-radius: 15px;
+    background-color: #7cbea3;
+    width: 34%;
+    height: 5px;
+    position: absolute;
+    left: 33%;
+    top: 41%;
+    z-index: 1;
+}
+
+.dash21 {
+    border-radius: 15px;
+    background-color: #f05c1e;
+    width: 34%;
+    height: 5px;
+    position: absolute;
+    left: 33%;
+    top: 41%;
+    z-index: 1;
+}
+
+.outline {
+    position: absolute;
+    height: 70vh;
+    width: 40vh;
+    border: 4px #0eb7a4 solid;
+    left: 10%;
+    top: 6%;
+    box-shadow:0 0 7px rgba(0,0,0,0.2);
+}
+
+.outline2 {
+    position: absolute;
+    height: 70vh;
+    width: 40vh;
+    border: 4px #ef7e46 solid;
+    left: 10%;
+    top: 6%;
+    box-shadow:0 0 7px rgba(0,0,0,0.2);
+}
+
+.containers a button{
+    position: relative;
+    font-family: "Corbel", sans-serif;
+    color: #ffffff;
+    font-size: 28pt;
+    padding: 9px 35px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    left: 30%;
+    top: 37%;
+    z-index: 1;
+}
+
+.button1 button{
+    background-color: #ef7e46;
+    transition: all 0.3s ease 0s;
+}
+
+.button1 button:hover {
+    background-color: #fff;
+    color: #0eb7a4;
+    border: 3px solid #0eb7a4;
+}
+
+.button2 button{
+    background-color: #0eb7a4;
+    transition: all 0.3s ease 0s;
+}
+
+.button2 button:hover {
+    background-color: #fff;
+    color: #ef7e46;
+    border: 3px solid #ef7e46;
+}
+
+.button3 button{
+    background-color: #ef7e46;
+    transition: all 0.3s ease 0s;
+}
+
+.button3 button:hover {
+    background-color: #fff;
+    color: #0eb7a4;
+    border: 3px solid #0eb7a4;;
+}
+
+.dropC{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 105%;
+    align-items: center;
+}
+
+.drop a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.drop {
+    position: relative;
+    width:80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 2px;
+    background-color: rgba(240, 92, 50, 0.9);
+    top: 92%;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+.drop:hover {
+    background-color: rgba(240, 92, 50, 1);
+}
+
+.box {
+    position: absolute;
+    width:95%;
+    height: 63%;
+    margin: auto;
+    border-radius: 2px;
+    border: 5px #ffffff solid;
+    top: 19%;
+    left: 2.5%;
+    text-align: center;
+}
+
+.drop h1 {
+    font-size: 28pt;
+    position: relative;
+    top: 26%;
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.wompi_button_widget {
+    z-index: 5;
+}
+
+/*
+FOOTER--------------------------------------------------------------------------------------------------------------
+*/
+body {
+background-color: #35363a;
+max-width: 1920px;
+}
+
+
+.face {
+left: 8.4%;
+position: absolute;
+bottom: -68.7%;
+z-index:3;
+}
+
+.insta {
+position: absolute;
+bottom: -68.7%;
+z-index:3;
+left: 32%;
+}
+
+.bottom{
+  position: absolute;
+  top: 160%;
+  width: 100%;
+  background-color: #fff;
+  color: #323232;
+  text-align: center;
+  border-bottom: 4vh solid #fff;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+ }
+
+.links {
+    color:#747474;
+    font-family: arial, serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 3% 10%;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.links:visited {
+color:#747474;
+}
+
+.link1 :hover{
+color: #f05c1e;
+}
+
+.link2 :hover{
+color: #f05c1e;
+}
+
+
+.backC {
+position: relative;
+width: 100%;
+z-index:-4;
+top: 0;
+}

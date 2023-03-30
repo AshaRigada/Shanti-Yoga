@@ -1,0 +1,295 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*
+Header---------------------------------------------------------------------------------------------------------------
+*/
+
+.logo {
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    background: #79c9c7;
+}
+
+.navigation li a {
+    font-family: "Quicksand", sans-serif;;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+nav .navigation {
+    background-color: #6cc7c5;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.navigation li a{
+    transition: all 0.3s ease-out;
+    background-color: #6cc7c5;
+    border-radius: 20px;
+}
+
+.navigation li a:not(.cta):hover{
+    padding: 7px 25px;
+    color: #2d5a51;
+    background-color: #1fbab8;
+}
+
+.cta button {
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    color: #f05c1e;
+    padding: 9px 25px;
+    background-color: #ffba9d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta button:hover {
+    background-color: #f05c1e;
+    color: #fff;
+}
+/*
+Body---------------------------------------------------------------------------------------------------------------
+*/
+
+.eye-icon:hover {
+    color: #f05c1e;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1fbab8;
+    padding-top: 5%;
+    position: absolute;
+    z-index: -2;
+}
+
+.form {
+    margin: auto;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.form-content h1 {
+    font-family: "Century Gothic", serif;
+    font-weight: lighter;
+    color: #1fbab8;
+    font-size: 45pt;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.field input,
+.field button {
+    font-family: "Segoe UI";
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+
+.field button {
+    cursor: pointer;
+    font-size: 16pt ;
+    color: #ffffff;;
+    background-color: #1fbab8;
+}
+
+.field button:hover {
+    color: #ffffff;;
+    background-color: #0eb7a4;
+}
+
+.field input {
+    padding: 0 15px;
+    font-family: Corbel;
+    font-size: 12pt;
+    color: #8e8e8e;
+    font-weight: lighter;
+    border: 3px #79c9c7 solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+.field input:focus {
+    border-bottom-width: 6px;
+}
+
+.form-link a {
+    color: #f05c1e;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.eye-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #6c6c6c;
+    transform: translateY(90%);
+    right: 8%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.form-link {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.form-sign span button,
+.form-sign span a button {
+    cursor: pointer;
+    font-family: "Segoe UI";
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+
+.form-sign button {
+    margin-top: 8%;
+    font-size: 16pt ;
+    color: #ffffff;;
+    background-color: #f68300;
+}
+
+.form-sign button:hover {
+    color: #ffffff;;
+    background-color: #f05c1e;
+}
+
+.form a {
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+    color: #2d5a51;
+}
+
+.line {
+    position: absolute;
+    height: 4px;
+    border-radius: 3px;
+    width: 10%;
+    background-color: #959595;
+    left: 45%;
+    top: 25%;
+}
+
+.line2 {
+    position: relative;
+    height: 4px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #8e8e8e;
+    margin: 36px 0;
+}
+
+.media-options a {
+    display: flex;
+    background-color: #323232;
+}
+
+/*
+FOOTER--------------------------------------------------------------------------------------------------------------
+*/
+body {
+background-color: #ffffff;
+max-width: 1920px;
+}
+
+
+.face {
+left: 8.4%;
+position: absolute;
+bottom: -38.7%;
+z-index:3;
+}
+
+.insta {
+position: absolute;
+bottom: -38.7%;
+z-index:3;
+left: 32%;
+}
+
+.bottom{
+  position: absolute;
+  top: 130%;
+  width: 100%;
+  background-color: #fff;
+  color: #323232;
+  text-align: center;
+  border-bottom: 4vh solid #fff;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+ }
+
+.links {
+color:#747474;
+    font-family: arial, serif;
+    text-decoration: none;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 3% 10%;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.links:visited {
+color:#747474;
+}
+
+.link1 :hover{
+color: #f05c1e;
+}
+
+.link2 :hover{
+color: #f05c1e;
+}
+
